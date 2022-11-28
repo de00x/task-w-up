@@ -49,6 +49,7 @@ export const EditingMode: FC<IEditModeProps> = ({
           changedData={changedData}
           selectedFile={selectedFile}
           updateAllTodos={updateAllTodos}
+          setSelectedFile={setSelectedFile}
           setUpdateAllTodos={setUpdateAllTodos}
           setInputBorderRed={setInputBorderRed}
           currentTodoEditing={currentTodoEditing}

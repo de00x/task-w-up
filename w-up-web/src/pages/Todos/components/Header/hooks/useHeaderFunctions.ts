@@ -30,6 +30,7 @@ const useHeaderFunctions = ({
 
   const successCreateNewTodo = (): void => {
     setAddNewTodo(false)
+    setSelectedFile(null)
     setTimeExecCheckbox(false)
     setUpdateAllTodos(!updateAllTodos)
     setNewTodoData({ ...newTodoData, heading: '', description: '', date: '' })

@@ -16,6 +16,7 @@ interface ISVGControllersProps {
   currentTodoEditing: string
   setUpdateAllTodos: React.Dispatch<React.SetStateAction<boolean>>
   setInputBorderRed: React.Dispatch<React.SetStateAction<boolean>>
+  setSelectedFile: React.Dispatch<React.SetStateAction<Blob | null>>
   setCurrentTodoEditing: React.Dispatch<React.SetStateAction<string>>
 }
 
@@ -24,6 +25,7 @@ export const SVGControllers: FC<ISVGControllersProps> = ({
   changedData,
   selectedFile,
   updateAllTodos,
+  setSelectedFile,
   setUpdateAllTodos,
   setInputBorderRed,
   currentTodoEditing,
@@ -38,6 +40,7 @@ export const SVGControllers: FC<ISVGControllersProps> = ({
   const successChangedData = (): void => {
     setUpdateAllTodos(!updateAllTodos)
     setCurrentTodoEditing('')
+    setSelectedFile(null)
   }
 
   const editingTodo = (e: React.MouseEvent<SVGSVGElement, MouseEvent>, todos: ITodos): void => {

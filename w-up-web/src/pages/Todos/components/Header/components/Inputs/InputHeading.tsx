@@ -23,10 +23,10 @@ export const InputHeading: FC<IInputHeadingProps> = ({
   return (
     <div className={stylesAddTodoFormHeading}>
       <input
+        maxLength={20}
+        placeholder="Heading"
         value={newTodoData.heading}
         onChange={(e) => setNewTodoData({ ...newTodoData, heading: e.target.value })}
-        maxLength={30}
-        placeholder="Heading"
       />
     </div>
   )

@@ -23,9 +23,10 @@ export const TextareaDesc: FC<ITADescProps> = ({
   return (
     <div className={stylesAddTodoFormDescription}>
       <textarea
+        maxLength={500}
+        placeholder="Description"
         value={newTodoData.description}
         onChange={(e) => setNewTodoData({ ...newTodoData, description: e.target.value })}
-        placeholder="Description"
       />
     </div>
   )

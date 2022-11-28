@@ -20,6 +20,7 @@ export const InputDataHeader: FC<IInputDataHProps> = ({
   return (
     <div className={stylesMainHeaderTextEdMode}>
       <input
+        maxLength={20}
         value={changedData.header}
         onChange={(e) => setChangedData({ ...changedData, header: e.target.value })}
       />

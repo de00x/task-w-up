@@ -20,6 +20,7 @@ export const TAreaDescription: FC<ITADescriptionProps> = ({
   return (
     <div className={stylesMainTaskDescriptionEdMode}>
       <textarea
+        maxLength={1000}
         value={changedData.description}
         onChange={(e) => setChangedData({ ...changedData, description: e.target.value })}
       />

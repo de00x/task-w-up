@@ -1,0 +1,164 @@
+.headerContainer {
+  width: 100%;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  background-color: rgb(96, 92, 92);
+}
+.headerContainerBgdOff {
+  background-color: rgba(96, 92, 92, 0);
+}
+.btnAddContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnAddTodo {
+  padding: 0.2rem 3rem;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  border: 1px solid rgb(161, 159, 159);
+  background-color: rgb(96, 92, 92);
+  transition: 0.15s background-color ease-in-out, 0.15s color ease-in-out;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    background-color: rgb(161, 159, 159);
+  }
+}
+.addTodoFormHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & input {
+    width: 50%;
+    height: 2rem;
+    padding: 0rem 0.5rem;
+    border-radius: 0.2rem;
+    color: rgb(96, 92, 92);
+    border: 1px solid rgb(161, 159, 159);
+    background-color: rgb(228, 224, 224);
+    &::placeholder {
+      color: rgb(96, 92, 92);
+    }
+  }
+}
+.addTodoFormHeadingBorderRed {
+  & input {
+    border-color: red;
+  }
+}
+.addTodoFormDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  & textarea {
+    width: 80%;
+    min-height: 2rem;
+    padding: 0rem 0.5rem;
+    border-radius: 0.2rem;
+    color: rgb(96, 92, 92);
+    border: 1px solid rgb(161, 159, 159);
+    background-color: rgb(228, 224, 224);
+    resize: none;
+    &::placeholder {
+      color: rgb(96, 92, 92);
+    }
+  }
+}
+.addTodoFormDescriptionBorderRed {
+  & textarea {
+    border-color: red;
+  }
+}
+.headerWantAddImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-decoration: underline;
+  color: rgb(149, 143, 143) !important;
+}
+.addFilesTodoFormContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.addFilesBtn {
+  width: 8.5rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  color: rgb(96, 92, 92);
+}
+.addFilesBtnActive {
+  width: auto;
+  color: #fff;
+}
+.addTodoTimeExecContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.timeExecInput {
+  width: 20%;
+  height: 2rem;
+  padding: 0rem 0.5rem;
+  border-radius: 0.2rem;
+  color: rgb(96, 92, 92);
+  border: 1px solid rgb(161, 159, 159);
+  background-color: rgb(228, 224, 224);
+  &::placeholder {
+    color: rgb(96, 92, 92);
+  }
+}
+.timeExecInputBorderRed {
+  border-color: red;
+}
+.timeExecInputDisabled {
+  text-decoration: line-through;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(113, 110, 110, 0.351);
+  &::placeholder {
+    color: rgba(168, 158, 158, 0.351);
+  }
+}
+.timeExecCheckbox {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  font-weight: 700;
+  & span {
+    font-size: 17px;
+    color: rgb(51, 50, 50);
+    cursor: pointer;
+  }
+  & input {
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+}
+.addTodoFooterContainer {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  & button {
+    width: 30%;
+    height: 2.5rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    color: rgb(187, 183, 183);
+    border: 1px solid rgb(128, 124, 124);
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.15s background-color ease-in-out, 0.15s color ease-in-out;
+    &:hover {
+      color: #fff;
+      border-color: rgba(0, 0, 0, 0);
+      background-color: rgb(83, 80, 80);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.todosWrapper {
+  width: 50%;
+  margin: 0rem auto;
+  padding-bottom: 10rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  top: 5rem;
+  & h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    cursor: default;
+    color: rgb(207, 205, 205);
+  }
+}

@@ -1,0 +1,211 @@
+.mainContainerEdMode {
+  position: relative;
+  width: 100%;
+  margin-top: 3rem;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  background-color: rgb(96, 92, 92);
+}
+.mainHeaderEdMode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainHeaderTextEdMode {
+  & input {
+    height: 2rem;
+    padding: 0rem 0.5rem;
+    border-radius: 0.2rem;
+    color: rgb(96, 92, 92);
+    border: 1px solid rgb(161, 159, 159);
+    background-color: rgb(228, 224, 224);
+    &::placeholder {
+      color: rgb(96, 92, 92);
+    }
+  }
+}
+.errInputBgdRed {
+  background-color: rgba(255, 0, 0, 0.349) !important;
+  & input {
+    border-color: rgb(128, 9, 9) !important;
+    background-color: rgba(255, 0, 0, 0.349) !important;
+  }
+}
+.mainHeaderControllersEdMode {
+  display: flex;
+  align-items: center;
+  & svg {
+    z-index: 2;
+    width: 20px;
+    cursor: pointer;
+    transition: 0.15s fill ease-in-out;
+    &:nth-child(1) {
+      &:hover {
+        fill: rgb(65, 63, 63);
+      }
+    }
+    &:nth-child(2) {
+      &:hover {
+        fill: rgb(153, 255, 0);
+      }
+    }
+    &:nth-child(3) {
+      &:hover {
+        fill: rgb(255, 0, 0);
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+}
+.mainHeaderControllersEdModeDisabled {
+  & svg {
+    &:nth-child(1) {
+      fill: orangered;
+      cursor: default;
+      &:hover {
+        fill: orangered;
+      }
+    }
+    &:nth-child(2) {
+      fill: rgb(65, 63, 63);
+    }
+    &:nth-child(3) {
+      fill: rgb(65, 63, 63);
+    }
+  }
+}
+.mainTaskDescriptionEdMode {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  background-color: rgba(87, 84, 84, 0.526);
+  & textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    background-color: rgba(87, 84, 84, 0);
+  }
+}
+.mainTaskDateExecEdMode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  height: 2rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  cursor: default;
+  & div:nth-child(2) {
+    display: flex;
+    & div {
+      margin-right: 0.5rem;
+    }
+  }
+  & label {
+    cursor: pointer;
+    & input {
+      cursor: pointer;
+      margin-right: 0.5rem;
+    }
+  }
+  & span {
+    transition: 0.15s color ease-in-out;
+    color: rgb(137, 131, 131);
+    &:hover {
+      color: rgb(109, 104, 104);
+    }
+  }
+}
+.mainTasEdModeInputDate {
+  height: 2rem;
+  padding: 0rem 0.5rem;
+  border-radius: 0.2rem;
+  color: rgb(96, 92, 92);
+  border: 1px solid rgb(161, 159, 159);
+  background-color: rgb(228, 224, 224);
+  &::placeholder {
+    color: rgb(96, 92, 92);
+  }
+}
+.mainAttachedFilesContainerEdMode {
+  margin-top: 0.2rem;
+}
+.changeAttFiles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  height: 2rem;
+  & label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  & div {
+    font-weight: 600;
+    transition: 0.15s color ease-in-out;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: rgb(137, 131, 131);
+    &:hover {
+      color: rgb(109, 104, 104);
+    }
+  }
+  & input:nth-child(1) {
+    cursor: pointer;
+    height: auto;
+  }
+  & input:nth-child(2) {
+    width: 8.5rem;
+    height: 2rem;
+  }
+}
+.btnDeleteAttFiles {
+  width: 7rem;
+  height: 1.7rem;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: 1px solid rgb(101, 97, 97);
+  background-color: rgb(137, 131, 131);
+  transition: 0.15s background-color ease-in-out;
+  &:hover {
+    border-color: rgb(109, 104, 104);
+    background-color: rgb(109, 104, 104);
+  }
+}
+.noFilesUploadedEdMode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: default;
+}
+.mainAttachedFilesEdMode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border-radius: 3rem;
+  padding: 0.3rem 0rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.15s background-color ease-in-out;
+  &:hover {
+    background-color: rgba(87, 84, 84, 0.526);
+  }
+}
+.attachedImageEdMode {
+  margin-top: 1rem;
+  & img {
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+  }
+}

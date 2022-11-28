@@ -16,7 +16,7 @@ export const editingTodos = async (req: any, res: any) => {
         description: req.body.description,
       });
       file.mv(
-        `${__dirname}/../../../task-w-up/public/uploads/${newFileName}`,
+        `${__dirname}/../../../w-up-web/public/uploads/${newFileName}`,
         (err) => {
           if (err) {
             console.error(err);
